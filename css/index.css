@@ -1,0 +1,302 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  height: 0;
+}
+/***** banner *****/
+.topic {
+  position: relative;
+  height: 1000px;
+}
+
+.banner_block {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.word_block {
+  position: absolute;
+  z-index: 2;
+  width: 550px;
+  top: 30%;
+  left: 10%;
+  color: #fffbe9;
+}
+
+h1 {
+  font-size: 2.875rem;
+  font-weight: 700;
+  letter-spacing: 0.8rem;
+  margin-bottom: 30px;
+}
+
+.word_block h6 {
+  color: #3a3845;
+  font-weight: 400;
+  line-height: 1.7;
+  letter-spacing: 0.2rem;
+  text-align: justify;
+  margin-bottom: 50px;
+}
+
+.link_btn {
+  padding: 23px 48px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.prime {
+  border: 2px solid #fffbe9;
+  color: #fffbe9;
+}
+
+.prime:hover {
+  border: none;
+  background-color: #fffbe9;
+  color: #3a3845;
+}
+
+.secondary {
+  border: 2px solid #3a3845;
+  color: #3a3845;
+}
+
+.secondary:hover {
+  background-color: #3a3845;
+  color: #fffbe9;
+}
+
+/* plugin Swiper */
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  transition: 1s linear 2s;
+  transform: scale(1.1, 1.1);
+}
+
+.swiper-slide-active img,
+.swiper-slide-duplicate-active img {
+  transition: 6s linear;
+  transform: scale(1, 1);
+}
+
+.swiper-pagination{
+  display: flex;
+  justify-content: right;
+}
+
+.banner-dot{
+  background-color: #FFFBE9;
+  opacity: 1;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.dot-active{
+  background-color: #3a3845;
+}
+
+/***** Section *****/
+section.news,
+section.concept,
+section.galleries {
+  width: 1200px;
+  margin: 160px auto;
+}
+
+section.galleries{
+  margin-bottom: 100px
+}
+
+/* 最新消息 Pop up 彈窗 */
+.pop_up_box {
+  width: 60%;
+  min-height: 60%;
+  position: relative;
+  left: calc(50% - 30%);
+  top: calc(50% - 30%);
+  background-color: #fffbe9;
+}
+
+.pop_title {
+  height: 43px;
+  background-color: #ad8b73;
+  text-align: center;
+}
+
+.pop_title > span {
+  color: #fffbe9;
+  font-size: 1.25rem;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+button.svg_close {
+  position: absolute;
+  right: 20px;
+  padding: 5px;
+  background: none;
+  border: none;
+}
+
+.pop_content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pop_word {
+  margin: 0 15px;
+}
+
+.pop_word > h3,
+.pop_word > h4,
+.pop_word > h5 {
+  margin-bottom: 5px;
+  color: #3a3845;
+}
+
+.pop_word + img {
+  box-sizing: border-box;
+  box-shadow: 0 0 5px #3a384580;
+  border-radius: 5px;
+}
+
+/* 最新消息 */
+.news,
+.concept,
+.galleries {
+  display: flex;
+}
+
+.news_list {
+  flex-direction: column;
+  width: 480px;
+  margin: 0 30px;
+}
+
+.news_list li {
+  border-bottom: 1px solid #3a3845;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.news_list h6 {
+  margin: 10px 0;
+  color: #3a3845;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.news_list span {
+  line-height: 1.8;
+  letter-spacing: 0.12rem;
+  color: #3a3845;
+}
+
+.news_list button {
+  text-decoration: none;
+  border: none;
+  background: none;
+  border-bottom: 1px solid #3a3845;
+}
+
+.news_list button:hover {
+  background-color: #3a3845;
+  color: #fffbe9;
+}
+
+.news_title,
+.galler_title {
+  writing-mode: vertical-rl;
+  display: inline;
+}
+
+.news_title h4,
+.concept_title h4,
+.galler_title h4 {
+  color: #c69b7b;
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+}
+
+.news_title h2,
+.concept_title h2,
+.galler_title h2 {
+  color: #826f66;
+  font-size: 2.875rem;
+  font-weight: 300;
+  letter-spacing: 1rem;
+  text-indent: 15px;
+}
+
+/* 點餐式系統介紹 */
+.concept_title {
+  writing-mode: vertical-lr;
+}
+
+.concept_content {
+  color: #3a3845;
+  text-align: justify;
+  width: 442px;
+  margin: 20px 54px 30px 13px;
+  line-height: 2.3;
+  letter-spacing: 0.3rem;
+}
+
+.pic_bg {
+  width: 520px;
+  height: 440px;
+  margin-left: 53px;
+  background-color: #f7ccac;
+}
+
+.pic_bg img {
+  position: relative;
+  top: calc(50% - 142px);
+  bottom: 0;
+  left: -62px;
+}
+
+/* 近期作品 */
+.pics {
+  display: grid;
+  grid: auto / auto auto auto auto;
+  grid-gap: 10px;
+  padding: 20px;
+}
+
+.item{
+  width: 255px;
+  height: 255px;
+  overflow: hidden;
+}
+
+.item img{
+  opacity: .7;
+}
+
+.item:hover img{
+  transition: transform linear .3s;
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+}
+
+/* Read more */
+.read_more_btn {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.read_more_btn a {
+  display: inline-block;
+}

@@ -1,0 +1,104 @@
+.container {
+  background-image: url("./../img/price/price_bg.png");
+  background-size: cover;
+}
+
+.price_list {
+  background-color: #fffbe9;
+  width: 700px;
+  padding: 30px 25px;
+  border-radius: 10px;
+  margin: 0 auto 100px auto;
+}
+
+/***** 滑動選單 *****/
+.slide_tab {
+  display: flex;
+  position: relative;
+  background-color: #ceab93;
+  padding: 5px;
+  border-radius: 5px;
+  justify-content: space-between;
+  flex-grow: 1;
+  z-index: 2;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 225px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+input[type="radio"]:checked + label {
+  color: #fffbe9;
+  z-index: 2;
+}
+
+input[id="basic"]:checked ~ .active_glider {
+  transform: translateX(0);
+}
+
+input[id="care"]:checked ~ .active_glider {
+  transform: translateX(105%);
+}
+
+input[id="specify"]:checked ~ .active_glider {
+  transform: translateX(205%);
+}
+
+.active_glider {
+  position: absolute;
+  display: flex;
+  height: 55px;
+  width: 225px;
+  background-color: #ad8b73;
+  border-radius: 5px;
+  z-index: 1;
+  transition: 0.25s ease-out;
+}
+
+/***** 價格標題說明 *****/
+
+.top_title {
+  border-bottom: 2px solid #826f66;
+  padding: 20px 5px;
+}
+
+.top_title span {
+  font-size: 0.925rem;
+}
+
+/***** 價格分類區塊 *****/
+.second_title {
+  background-color: #e3caa5;
+  font-weight: 600;
+  padding: 10px;
+  text-align: center;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.second_title ~ ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 3px 0 3px;
+}
+
+.bottom_tips{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #826f66;
+}
+.bottom_tips span{
+    margin: 10px;
+}

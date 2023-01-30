@@ -1,0 +1,64 @@
+.box1 {
+  grid-area: handCare;
+  align-self: end;
+  
+}
+
+.box2 {
+  grid-area: handPrint;
+  align-self: start;
+  margin-top: 30px;
+}
+
+.box3 {
+  grid-area: handImg;
+  align-self: center;
+}
+
+.box4 {
+  grid-area: footCare;
+  align-self: end;
+
+}
+
+.box5 {
+  grid-area: footPrint;
+  align-self: start;
+  margin-top: 30px;
+}
+
+.box6 {
+  grid-area: footImg;
+  align-self: center;
+  margin-top: 80px;
+}
+
+.service_info_block {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "handCare handImg"
+    "handPrint handImg"
+    "footImg footCare"
+    "footImg footPrint";
+  column-gap: 20px;
+  margin-bottom: 150px;
+}
+
+.info_area {
+  border: 2px solid #c69b7b;
+  position: relative;
+}
+
+main h4 {
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 51px);
+  padding: 10px;
+  background-color: #fffbe9;
+}
+
+article {
+  padding: 10px;
+}

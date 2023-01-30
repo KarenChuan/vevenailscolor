@@ -1,0 +1,134 @@
+main h3 {
+  margin-bottom: 50px;
+}
+
+/***** 點餐式系統介紹 ******/
+
+section.intro_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+
+.concept_introduce {
+  width: 678px;
+  background-color: #ceab93;
+  padding: 30px;
+}
+
+.concept_introduce h2,
+.concept_introduce p,
+.concept_introduce li {
+  margin-bottom: 25px;
+}
+
+.concept_introduce li {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+}
+
+.concept_introduce span {
+  display: inline-block;
+  letter-spacing: 0.2rem;
+  line-height: 1.8rem;
+  margin-left: 10px;
+}
+
+article .pic {
+  width: 380px;
+}
+
+/***** 採訪報導 *****/
+
+section.report_block {
+  position: relative;
+  min-height: 722px;
+  margin-bottom: 120px;
+}
+
+section.report_block h2 {
+  color: #826f66;
+  padding-left: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+section.report_block img {
+  width: 974px;
+}
+
+.brown_decroate {
+  background-color: #e3caa5;
+  width: 670px;
+  height: 470px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+/***** 遮罩區 *****/
+.content {
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+  left: 0;
+  top: 82px;
+  z-index: 2;
+}
+
+.content_overlay {
+  background: linear-gradient(350deg, #3a38454d, #ffffff00);
+  position: absolute;
+  height: 640px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.depiction {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 0 136px 80px;
+  box-sizing: border-box;
+  opacity: 0;
+  z-index: 5;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.depiction span {
+  font-size: 1.125rem;
+  margin-bottom: 24px;
+  color: #fffbe9;
+  letter-spacing: 0;
+}
+
+.depiction p {
+  color: #fffbe9;
+  font-size: 1.875rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+.content svg {
+  position: absolute;
+  right: 190px;
+  bottom: 230px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content_overlay {
+  opacity: 1;
+}
+
+.content:hover .depiction {
+  opacity: 1;
+}

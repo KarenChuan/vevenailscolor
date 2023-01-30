@@ -1,0 +1,127 @@
+main > div {
+  margin-bottom: 100px;
+}
+
+/* 工作室資訊 */
+.studio_allinfo {
+  display: grid;
+  grid-template-columns: repeat(12, 80px [col-start]);
+  grid-template-rows: 440px auto;
+  gap: 50px 20px;
+}
+
+.img_block {
+  grid-area: 1/1/2/9;
+  position: relative;
+}
+
+.transport {
+  grid-area: 2/1/4/5;
+}
+
+.open_time {
+  grid-area: 2/5/4/9;
+}
+
+.google_map {
+  margin-top: calc(220px - 145px);
+  grid-area: 1/9/2/13;
+}
+
+.location {
+  grid-area: 2/9/4/13;
+}
+
+/* 圖片區 */
+.box1,
+.box2,
+.box3 {
+  position: absolute;
+}
+
+.box1 img,
+.box2 img,
+.box3 img {
+  position: absolute;
+  z-index: 999;
+  box-shadow: 0 0 5px #00000040;
+}
+
+.box1 {
+  top: 215px;
+  left: 0;
+  z-index: 3;
+}
+
+.box2 {
+  top: 40px;
+  left: 200px;
+  z-index: 1;
+}
+
+.box3 {
+  top: 0;
+  left: 495px;
+  z-index: 2;
+}
+
+.box1::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  background-color: #e3caa5cc;
+  width: 255px;
+  height: 130px;
+}
+.box2::after {
+  content: "";
+  position: absolute;
+  top: 61px;
+  left: 54px;
+  background-color: #f7ccaccc;
+  width: 325px;
+  height: 340px;
+}
+
+.box3::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  background-color: #e3caa5cc;
+  width: 260px;
+  height: 135px;
+}
+
+/* 文字資訊區 */
+.second_title {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+h6 {
+  line-height: 1.5rem;
+  margin-left: 10px;
+  letter-spacing: 0.2rem;
+}
+
+.transport_list {
+  margin-bottom: 10px;
+  text-indent: -1.9rem;
+  letter-spacing: 0.07rem;
+  text-align: justify;
+  font-weight: 300;
+}
+
+.open_time p,
+.location p {
+  letter-spacing: 0.07rem;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.open_time p {
+  text-align: center;
+}

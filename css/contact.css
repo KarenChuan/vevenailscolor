@@ -1,0 +1,88 @@
+main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+
+/***** line連結區  *****/
+.line_block {
+  text-align: center;
+  width: 350px;
+  margin-right: 130px;
+}
+
+.line_block p {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.line_block p span {
+  font-size: 1.25rem;
+}
+
+/***** 表單區塊 *****/
+.form_block {
+  width: 580px;
+}
+
+.input_group {
+  background-color: #e3caa5;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+}
+
+input[type="text"],
+textarea {
+  border: none;
+  width: 548px;
+  background-color: #e3caa5;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #ad8b73;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  background-color: #e3caa5;
+}
+
+input[type="text"]:focus {
+  border-bottom: 1px solid #ad8b73;
+}
+
+.input_group label {
+  color: #3a4845;
+  font-size: 0.75rem;
+}
+
+.btn_block{
+    text-align: center;
+}
+
+input[type="submit"].btn,
+button.btn {
+  font-size: 1.25rem;
+  padding: 17px 50px;
+  border: 2px solid #826f66;
+}
+
+.prime{
+    background-color: #826f66;
+    color: #fffbe9;
+    margin-left: 20px;
+}
+
+.secondary{
+    background-color: #fffbe9;
+    color: #826f66;
+}
+
+
