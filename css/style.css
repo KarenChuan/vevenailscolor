@@ -36,7 +36,7 @@ nav {
 }
 
 nav ul {
-  width: 1020px;
+  min-width: 1020px;
   margin: 27px 104px 27px 95px;
   display: flex;
   justify-content: space-between;
