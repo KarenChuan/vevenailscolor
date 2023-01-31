@@ -1,4 +1,4 @@
-
+AOS.init();
 
 // nav scroll
 let prevScrollpos = window.pageYOffset;
@@ -11,6 +11,8 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+
 
 
 
