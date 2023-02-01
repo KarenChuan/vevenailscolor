@@ -117,11 +117,11 @@ section.galleries{
 
 /* 最新消息 Pop up 彈窗 */
 .pop_up_box {
-  width: 60%;
-  min-height: 60%;
+  width: 40%;
+  min-height: 50%;
   position: relative;
-  left: calc(50% - 30%);
-  top: calc(50% - 30%);
+  left: calc(50% - 20%);
+  top: calc(50% - 25%);
   background-color: #fffbe9;
 }
 
