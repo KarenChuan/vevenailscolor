@@ -102,3 +102,11 @@ input[id="specify"]:checked ~ .active_glider {
 .bottom_tips span{
     margin: 10px;
 }
+
+#price_3 .bottom_tips{
+  text-align: left;
+}
+
+#price_3 .bottom_tips>p{
+  margin: 5px;
+}

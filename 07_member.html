@@ -5,25 +5,18 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VEVE作品集</title>
+  <title>會員登入</title>
   <link rel="shortcut icon" href="./img/index/page_icon.ico" type="image/x-icon">
   <!-- google font -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
-  <!-- jQuery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
   <!-- Plugin -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <!-- Js外掛區 -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-  <script src="https://unpkg.com/infinite-scroll@4/dist/infinite-scroll.pkgd.js"></script>
   <!-- page style -->
   <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="./css/gallery.css" />
-
+  <link rel="stylesheet" href="./css/member.css" />
 </head>
 
 <body>
@@ -57,7 +50,7 @@
             <a href="02_service.html">服務項目</a>
           </li>
           <li>
-            <a class="active" href="03_gallery.html">作品集</a>
+            <a href="03_gallery.html">作品集</a>
           </li>
           <li>
             <a href="04_price.html">價目表</a>
@@ -69,7 +62,7 @@
             <a href="06_studio.html">店面資訊</a>
           </li>
           <li>
-            <a href="07_member.html">登入/註冊</a>
+            <a class="active" href="07_member.html">登入/註冊</a>
           </li>
         </ul>
       </nav>
@@ -78,91 +71,58 @@
     <!-- 主要內容區塊 -->
     <main>
       <!-- 標題 -->
-      <h1>作品集</h1>
-      <h3 class="uppercase">gallery</h3>
+      <h1>登入/註冊</h1>
+      <h3 class="uppercase">reserve</h3>
 
-      <!-- 篩選區 -->
-      <div class="filter_area">
-        <ul id="filter_btn">
-          <li class="active" data-filter="*">全部</li>
-          <li data-filter="block">色塊</li>
-          <li data-filter="line">線條</li>
-          <li data-filter="simple">簡約</li>
-          <li data-filter="gradient">暈染</li>
-          <li data-filter="painting">手繪</li>
-        </ul>
+      <div>
+        <!-- line連結區 -->
+        <div class="line_block">
+          <img src="./img/contect/line_01.png" alt="加line聯絡" />
+          <p>
+            <span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.25 11C1.25 5.54285 6.13922 1.25 12 1.25C17.8608 1.25 22.75 5.54285 22.75 11C22.75 14.0604 20.9016 16.6636 18.7548 18.6172C16.5952 20.5825 14.015 22.0018 12.2785 22.6964C12.0475 22.7888 11.7856 22.7606 11.5795 22.621C11.3734 22.4815 11.25 22.2489 11.25 22V20.2225C8.81784 20.0454 6.45576 19.0227 4.64486 17.5137C2.65218 15.8531 1.25 13.5337 1.25 11ZM7.5 12.5C8.32843 12.5 9 11.8284 9 11C9 10.1716 8.32843 9.5 7.5 9.5C6.67157 9.5 6 10.1716 6 11C6 11.8284 6.67157 12.5 7.5 12.5ZM12 12.5C12.8284 12.5 13.5 11.8284 13.5 11C13.5 10.1716 12.8284 9.5 12 9.5C11.1716 9.5 10.5 10.1716 10.5 11C10.5 11.8284 11.1716 12.5 12 12.5ZM18 11C18 11.8284 17.3284 12.5 16.5 12.5C15.6716 12.5 15 11.8284 15 11C15 10.1716 15.6716 9.5 16.5 9.5C17.3284 9.5 18 10.1716 18 11Z"
+                  fill="#AD8B73" />
+              </svg>
+            </span>
+            <span>歡迎直接加line好友快速預約諮詢</span>
+          </p>
+        </div>
+
+        <!-- 填寫表單區塊 -->
+        <form class="form_block">
+          <!-- 姓名 -->
+          <div class="input_group">
+            <label for="name">姓名
+              <input type="text" id="name" name="name" placeholder="請輸入姓名" />
+            </label>
+          </div>
+          <!-- e-mail -->
+          <div class="input_group">
+            <label for="email">E-mail
+              <input type="text" id="email" name="email" placeholder="請輸入E-mail" />
+            </label>
+          </div>
+          <!-- line -->
+          <div class="input_group">
+            <label for="name">Line ID
+              <input type="text" id="line" name="line" placeholder="請輸入Line ID" />
+            </label>
+          </div>
+          <!-- 訊息 -->
+          <div class="input_group">
+            <label for="name">訊息內容
+              <textarea placeholder="請輸入訊息內容" rows="8"></textarea>
+            </label>
+          </div>
+          <!-- 按鈕 -->
+          <div class="btn_block">
+            <button class="btn secondary">清空</button>
+            <input class="btn prime" type="submit" value="送出" />
+          </div>
+        </form>
       </div>
-
-      <!-- 圖片區 -->
-      <ul class="pics_area">
-        <li data-category="block" class="block gradient">
-          <img src="./img/gallery/001.png" alt="作品">
-        </li>
-        <li class="simple">
-          <img src="./img/gallery/002.png" alt="作品">
-        </li>
-        <li class="simple painting">
-          <img src="./img/gallery/003.png" alt="作品">
-        </li>
-        <li class="simple painting">
-          <img src="./img/gallery/004.png" alt="作品">
-        </li>
-        <li class=painting">
-          <img src="./img/gallery/005.png" alt="作品">
-        </li>
-        <li class="painting">
-          <img src="./img/gallery/006.png" alt="作品">
-        </li>
-        <li class="painting block">
-          <img src="./img/gallery/007.png" alt="作品">
-        </li>
-        <li class="painting">
-          <img src="./img/gallery/008.png" alt="作品">
-        </li>
-        <li class="gradient">
-          <img src="./img/gallery/009.png" alt="作品">
-        </li>
-        <li class="line painting">
-          <img src="./img/gallery/010.png" alt="作品">
-        </li>
-        <!-- <li class="">
-          <img src="./img/gallery/011.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/012.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/013.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/014.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/015.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/016.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/017.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/018.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/019.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/020.png" alt="作品">
-        </li>
-        <li>
-          <img src="./img/gallery/021.png" alt="作品">
-        </li> -->
-      </ul>
-
-      <!-- 滾動slide -->
-      <div class="slide_down"></div>
-
     </main>
 
     <!-- Footer區 -->
@@ -204,9 +164,9 @@
     </footer>
   </div>
 
-  
+  <!-- Js外掛區 -->
   <script src="./js/common.js"></script>
-  <script src="./js/gallery.js"></script>
+
 </body>
 
 </html>

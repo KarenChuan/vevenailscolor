@@ -12,8 +12,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
     rel="stylesheet" />
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <!-- Plugin -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- page style -->
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/price.css" />
@@ -61,6 +65,9 @@
           <li>
             <a href="06_studio.html">店面資訊</a>
           </li>
+          <li>
+            <a href="07_member.html">登入/註冊</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -74,72 +81,172 @@
       <div class="price_list">
         <!-- 滑動選單 -->
         <div class="slide_tab">
-          <input type="radio" id="basic" name="tabs" checked />
+          <input type="radio" id="basic" name="tabs" data-tablink="price_1" checked>
           <label class="tab" for="basic">基礎凝膠</label>
-          <input type="radio" id="care" name="tabs" />
+          <input type="radio" id="care" name="tabs" data-tablink="price_2">
           <label class="tab" for="care">保養護理</label>
-          <input type="radio" id="specify" name="tabs" />
+          <input type="radio" id="specify" name="tabs" data-tablink="price_3">
           <label class="tab" for="specify">指定款式</label>
           <span class="active_glider"></span>
         </div>
-        <!-- 價格標題說明 -->
-        <div class="top_title">
-          <h6>基礎凝膠包含完整基礎保養</h6>
-          <span>如有預算考量，款式皆可依照預算和喜好來設計</span>
-          <span>提醒注意事項本店不提供水晶指甲及指甲油服務</span>
+        <!-- 價格內容顯示 -->
+        <div class="price_content" id="price_1">
+          <!-- 價格標題說明 -->
+          <div class="top_title">
+            <h6>基礎凝膠包含完整基礎保養</h6>
+            <span>如有預算考量，款式皆可依照預算和喜好來設計</span>
+            <span>提醒注意事項本店不提供水晶指甲及指甲油服務</span>
+          </div>
+          <!-- 價格分類區塊 -->
+          <div class="second_title">手部</div>
+          <ul>
+            <li>
+              <span>透明凝膠</span>
+              <span>$800</span>
+            </li>
+            <li>
+              <span>單色凝膠</span>
+              <span>$1,000</span>
+            </li>
+          </ul>
+          <div class="second_title">足部</div>
+          <ul>
+            <li>
+              <span>透明凝膠</span>
+              <span>$800</span>
+            </li>
+            <li>
+              <span>單色凝膠</span>
+              <span>$1,000</span>
+            </li>
+          </ul>
+          <div class="second_title">卸甲</div>
+          <ul>
+            <li>
+              <span>本店卸除重做</span>
+              <span>加價$300</span>
+            </li>
+            <li>
+              <span>他店卸除重做</span>
+              <span>加價$400</span>
+            </li>
+            <li>
+              <span>本店純卸甲</span>
+              <span>$400</span>
+            </li>
+            <p>(純卸含甲型、甲面處理、透明護甲油)</p>
+            <li>
+              <span>他店純卸甲</span>
+              <span>$500</span>
+            </li>
+            <p>(純卸含甲型、甲面處理、透明護甲油)</p>
+            <li>
+              <span>特殊卸甲</span>
+              <span>$600</span>
+            </li>
+            <p>(ex.孕婦卸甲、卸甲水過敏、不可卸式的手工磨除卸甲)</p>
+          </ul>
+          <div class="bottom_tips">
+            <span>絲綢延甲NT$120/指</span>
+            <span>凝膠延甲NT$150/指</span>
+          </div>
         </div>
-        <!-- 價格分類區塊 -->
-        <div class="second_title">手部</div>
-        <ul>
-          <li>
-            <span>透明凝膠</span>
-            <span>$800</span>
-          </li>
-          <li>
-            <span>單色凝膠</span>
-            <span>$1000</span>
-          </li>
-        </ul>
-        <div class="second_title">足部</div>
-        <ul>
-          <li>
-            <span>透明凝膠</span>
-            <span>$800</span>
-          </li>
-          <li>
-            <span>單色凝膠</span>
-            <span>$1000</span>
-          </li>
-        </ul>
-        <div class="second_title">卸甲</div>
-        <ul>
-          <li>
-            <span>本店卸除重做</span>
-            <span>加價$300</span>
-          </li>
-          <li>
-            <span>他店卸除重做</span>
-            <span>加價$400</span>
-          </li>
-          <li>
-            <span>本店純卸甲</span>
-            <span>$400</span>
-          </li>
-          <p>(純卸含甲型、甲面處理、透明護甲油)</p>
-          <li>
-            <span>他店純卸甲</span>
-            <span>$500</span>
-          </li>
-          <p>(純卸含甲型、甲面處理、透明護甲油)</p>
-          <li>
-            <span>特殊卸甲</span>
-            <span>$600</span>
-          </li>
-          <p>(ex.孕婦卸甲、卸甲水過敏、不可卸式的手工磨除卸甲)</p>
-        </ul>
-        <div class="bottom_tips">
-          <span>絲綢延甲NT$120/指</span>
-          <span>凝膠延甲NT$150/指</span>
+        <div class="price_content" id="price_2" style="display: none;">
+          <!-- 價格標題說明 -->
+          <div class="top_title">
+          </div>
+          <!-- 價格分類區塊 -->
+          <div class="second_title">手部</div>
+          <ul>
+            <li>
+              <span>基礎護理</span>
+              <span>$600</span>
+            </li>
+            <li>
+              <span>深層護理(至手腕)</span>
+              <span>$1,000</span>
+            </li>
+          </ul>
+          <div class="second_title">足部</div>
+          <ul>
+            <li>
+              <span>基礎護理</span>
+              <span>$800</span>
+            </li>
+            <li>
+              <span>深層護理(至膝蓋)</span>
+              <span>$1,800</span>
+            </li>
+            <li>
+              <span>足底硬皮護理</span>
+              <span>$600</span>
+            </li>
+          </ul>
+        </div>
+        <div class="price_content" id="price_3" style="display: none;">
+          <!-- 價格標題說明 -->
+          <div class="top_title">
+            <h6>套餐A-E款以設計創作幾指造型計價</h6>
+            <span>「簡約」造型包括：線條、暈染、刷色、色塊、琥珀、貝殼、小圖...等、卡通、花磚、油畫、圖騰...等手繪和立體設計，依難易度另外計價</span>
+            <span>提醒注意事項本店不提供水晶指甲及指甲油服務</span>
+          </div>
+          <!-- 價格分類區塊 -->
+          <div class="second_title">單點</div>
+          <ul>
+            <li>
+              <span>單色(十指)</span>
+              <span>$1,000</span>
+            </li>
+            <p>(純單色不限跳色、霧面不加價)</p>
+            <li>
+              <span>特殊色(十指)</span>
+              <span>$1,100</span>
+            </li>
+            <p>(貓眼、鏡面、亮片、砂糖、毛呢、特殊色)</p>
+            <li>
+              <span>法式/漸層(十指)</span>
+              <span>$1,200</span>
+            </li>
+            <p>(底色不加價)</p>
+            <li>
+              <span>同款暈染(十指)</span>
+              <span>$1,300</span>
+            </li>
+            <p>(最多可選3-4色)</p>
+          </ul>
+          <div class="second_title">套餐</div>
+          <ul>
+            <li>
+              <span>A.一手兩指造型</span>
+              <span>$1,000</span>
+            </li>
+            <p>(四指「簡約」造型+六指單色)</p>
+            <li>
+              <span>B.一手三指造型</span>
+              <span>$1,200</span>
+            </li>
+            <p>(六指「簡約」造型+四指單色)</p>
+            <li>
+              <span>C.一手四指造型</span>
+              <span>$1,300</span>
+            </li>
+            <p>(八指「簡約」造型+兩指單色)</p>
+            <li>
+              <span>D.一手五指造型</span>
+              <span>$1,400</span>
+            </li>
+            <p>(十指「簡約」造型、相同風格)</p>
+            <li>
+              <span>E.全手造型不同款</span>
+              <span>$1,500</span>
+            </li>
+            <p>(十指造型、雙手不同款)</p>
+          </ul>
+          <div class="bottom_tips">
+            <p>可另先傳圖詢價或依預算做樣式 可客製專屬調色不加價</p>
+            <p>以上項目皆含乾式手部基礎保養及建構家厚 (修型、甘皮修剪、兩側硬皮修剪、建構加厚、指緣油)</p>
+            <p>30天內回店卸甲續做，卸甲優惠半價</p>
+          </div>
         </div>
       </div>
     </main>
@@ -186,6 +293,7 @@
   <!-- Js外掛區 -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="./js/common.js"></script>
+  <script src="./js/price.js"></script>
 
 </body>
 
