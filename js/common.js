@@ -1,4 +1,4 @@
-ocument.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
 
   let screenWidth = document.body.clientWidth;
   let hamburger = document.querySelector('input.trigger');

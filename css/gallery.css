@@ -4,7 +4,7 @@
   justify-content: center;
 }
 
-.filter_area ul > li {
+.filter_area ul>li {
   cursor: pointer;
   border-radius: 30px;
   padding: 8px 24px;
@@ -13,7 +13,7 @@
   margin-left: 30px;
 }
 
-.filter_area ul > li.active {
+.filter_area ul>li.active {
   background-color: #ad8b73;
   color: #fffbe9;
 }
@@ -28,12 +28,13 @@
   display: block;
 }
 
-.pics_area > li {
+.pics_area>li {
   position: relative;
   width: 355px;
+
 }
 
-.pics_area > li > img {
+.pics_area>li>a>img {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -41,15 +42,14 @@
   border-radius: 5px;
 }
 
-.pics_area>li:hover img{
+.pics_area>li:hover img {
   transition: transform linear .3s;
   transform: scale(1.1, 1.1);
   opacity: 1;
 }
 
-
 /***** 收藏最愛 *****/
-.collect{
+.collect {
   position: absolute;
   top: 10px;
   right: 20px;
@@ -58,7 +58,7 @@
 }
 
 .collect span,
-.collect i{
+.collect i {
   text-shadow: 2px 2px 4px #ad8b73;
   color: #fffbe9;
   font-size: 1.5rem;
@@ -66,21 +66,23 @@
   margin-left: 5px;
 }
 
-i.active{
+i.fa-heart.active {
   color: #d14b47;
-}
-.active{
   animation: heart 0.5s linear;
 }
-@keyframes heart{
-  from{
-      font-size: 1.7rem;
+
+@keyframes heart {
+  from {
+    font-size: 1.7rem;
   }
-  50%{
-      font-size: 1.3rem;;
+
+  50% {
+    font-size: 1.3rem;
+    ;
   }
-  to{
-      font-size: 1.7rem;
+
+  to {
+    font-size: 1.7rem;
   }
 }
 
@@ -112,26 +114,32 @@ i.active{
   0% {
     top: -50%;
   }
+
   20%,
   25% {
     top: 5px;
     height: 15px;
   }
+
   40% {
     top: 5px;
     height: 20px;
   }
+
   45% {
     top: 10px;
   }
+
   49% {
     height: 25px;
   }
+
   50%,
   80% {
     top: calc(100% - 5px - 15px);
     height: 15px;
   }
+
   100% {
     top: 130%;
   }
@@ -153,5 +161,9 @@ i.active{
 
   .pics_area>li {
     width: 100%;
+  }
+
+  .collect {
+    top: 30px;
   }
 }

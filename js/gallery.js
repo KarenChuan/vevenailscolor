@@ -1,4 +1,4 @@
-//Isotope filter Menu
+//---------- Isotope filter Menu ----------//
 $('.pics_area').imagesLoaded(function () {
   // init Isotope
   var $grid = $(".pics_area").isotope({
@@ -8,15 +8,14 @@ $('.pics_area').imagesLoaded(function () {
       horizontalOrder: true,
     },
   });
-});
-// bind filter button click
-$("#filter_btn").on("click", "li", function () {
-  var filterValue = $(this).attr("data-filter");
-  $grid.isotope({
-    filter: filterValue,
+  // bind filter button click
+  $("#filter_btn").on("click", "li", function () {
+    var filterValue = $(this).attr("data-filter");
+    $grid.isotope({
+      filter: filterValue,
+    });
   });
 });
-
 // change is-checked class on buttons
 $("#filter_btn").each(function (i, filterBtn) {
   let $filterBtn = $(filterBtn);
