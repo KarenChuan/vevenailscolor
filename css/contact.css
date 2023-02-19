@@ -1,4 +1,4 @@
-main > div {
+main>div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -63,8 +63,8 @@ input[type="text"]:focus {
   font-size: 0.75rem;
 }
 
-.btn_block{
-    text-align: center;
+.btn_block {
+  text-align: center;
 }
 
 input[type="submit"].btn,
@@ -74,15 +74,55 @@ button.btn {
   border: 2px solid #826f66;
 }
 
-.prime{
-    background-color: #826f66;
-    color: #fffbe9;
-    margin-left: 20px;
+.prime {
+  background-color: #826f66;
+  color: #fffbe9;
+  margin-left: 20px;
 }
 
-.secondary{
-    background-color: #fffbe9;
-    color: #826f66;
+.secondary {
+  background-color: #fffbe9;
+  color: #826f66;
 }
 
 
+/***** MediaQuery *****/
+@media (max-width: 414px) {
+  main>div {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .line_block {
+    margin-right: 0;
+  }
+
+  .line_block p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .form_block {
+    max-width: 100%;
+  }
+
+  .input_group {
+    padding: 10px;
+  }
+
+
+  input[type="text"],
+  textarea {
+    max-width: 100%;
+  }
+
+  input[type="submit"].btn,
+  button.btn {
+    padding: 10px 65px;
+  }
+
+  .input_group label{
+    font-size: 1rem;
+  }
+
+}

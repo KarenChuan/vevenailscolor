@@ -1,0 +1,171 @@
+main>div {
+  margin-bottom: 150px;
+  display: grid;
+  justify-content: center;
+}
+
+/***** 滑動選單 *****/
+
+.slide_tab {
+  display: flex;
+  max-width: 100%;
+  position: relative;
+  background-color: #ceab93;
+  padding: 5px;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  justify-content: space-between;
+  flex-grow: 1;
+  z-index: 2;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 50%;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.15s ease-in;
+}
+
+input[type="radio"]:checked+label {
+  color: #fffbe9;
+  z-index: 2;
+}
+
+input[id="basic"]:checked~.active_glider {
+  transform: translateX(0);
+}
+
+input[id="care"]:checked~.active_glider {
+  transform: translateX(100%);
+}
+
+input[id="specify"]:checked~.active_glider {
+  transform: translateX(205%);
+}
+
+.active_glider {
+  position: absolute;
+  display: flex;
+  height: 55px;
+  width: 49%;
+  background-color: #ad8b73;
+  border-radius: 5px;
+  z-index: 1;
+  transition: 0.25s ease-out;
+}
+
+/***** 表單區塊 *****/
+.form_block {
+  max-width: 580px;
+}
+
+.input_group {
+  background-color: #e3caa5;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 8px 16px;
+}
+
+input[type="text"],
+input[type="password"] {
+  border: none;
+  width: 548px;
+  background-color: #e3caa5;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+input::placeholder {
+  color: #ad8b73;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  background-color: #e3caa5;
+  border-bottom: 1px solid #ad8b73;
+}
+
+.input_group label {
+  color: #3a4845;
+  font-size: 0.75rem;
+}
+
+/***** 按鈕 *****/
+.mark_block{
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn_block {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn_block div {
+  margin: 30px 0;
+}
+
+input[type="submit"].btn,
+button.btn {
+  font-size: 1.25rem;
+  min-width: 380px;
+  padding: 17px 50px;
+  border: 2px solid #826f66;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.1rem;
+}
+
+button.btn:active,
+.prime {
+  background-color: #826f66;
+  color: #fffbe9;
+}
+
+input[type="submit"].btn:focus {
+  transform: translate(2px, 2px);
+}
+
+
+.secondary {
+  background-color: #fffbe9;
+  color: #826f66;
+}
+
+button svg {
+  margin-right: 10px;
+}
+
+button:active svg path {
+  fill: #fffbe9;
+}
+
+/***** Media Query *****/
+@media (max-width :414px) {
+  main>div {
+    width: 100%;
+    display: inherit;
+  }
+
+  .form_block,
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+  }
+
+  input[type="submit"].btn,
+  button.btn {
+    min-width: 100%;
+  }
+
+
+}

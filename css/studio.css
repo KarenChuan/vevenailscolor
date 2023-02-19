@@ -1,4 +1,4 @@
-main > div {
+main>div {
   margin-bottom: 100px;
 }
 
@@ -74,6 +74,7 @@ main > div {
   width: 255px;
   height: 130px;
 }
+
 .box2::after {
   content: "";
   position: absolute;
@@ -124,4 +125,90 @@ h6 {
 
 .open_time p {
   text-align: center;
+}
+
+
+/***** MediaQuery *****/
+@media (max-width: 414px) {
+  main>h3 {
+    margin-bottom: 20px;
+  }
+
+  .studio_allinfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    gap: 50px 10px;
+    justify-items: stretch;
+  }
+
+  .img_block {
+    position: static;
+    display: none;
+  }
+
+  .phone_img {
+    grid-area: 1/1/2/5;
+  }
+
+  .open_time {
+    grid-area: 2/1/3/5;
+    align-items: stretch;
+  }
+
+  .google_map {
+    grid-area: 3/1/4/5;
+    align-items: stretch;
+  }
+
+  .transport {
+    grid-area: 4/1/5/5;
+    align-items: stretch;
+  }
+
+  .location {
+    grid-area: 5/1/6/5;
+    align-items: stretch;
+  }
+
+  .box1,
+  .box2,
+  .box3 {
+    position: static;
+    z-index: inherit;
+    max-width: 100vw;
+    max-height: 20vh;
+  }
+
+  .box1::after,
+  .box2::after,
+  .box3::after {
+    display: none;
+  }
+
+  .transport_list {
+    margin-bottom: 10px;
+    margin-left: 2rem;
+  }
+
+  .swiper-slide {
+    width: auto !important;
+    margin-right: 15px !important;
+  }
+
+  .swiper img {
+    width: 380px;
+    max-width: 100%;
+    height: 205px;
+  }
+
+  span.swiper_dot{
+    width: 8px;
+    height: 8px;
+    background-color: yellow;
+
+  }
+
+
+
 }
