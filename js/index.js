@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function () {
 //首頁最新消息彈窗
 let popUp = document.querySelector('.pop_up_overlay');
 
@@ -19,3 +19,4 @@ document.addEventListener('click', (e) => {
   }
 });
 
+});

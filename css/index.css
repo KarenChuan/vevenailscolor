@@ -404,7 +404,8 @@ img.svg_close {
     padding: 0;
   }
   .pics a img{
-    width: 100%;
+    width: 186px;
+    height: 186px;
   }
 
   .item {
