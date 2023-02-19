@@ -399,7 +399,7 @@ img.svg_close {
 
   .pics {
     display: grid;
-    grid: auto auto auto auto / auto auto;
+    grid: auto auto auto auto auto / auto auto;
     grid-gap: 10px;
     padding: 0;
   }
