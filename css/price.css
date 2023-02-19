@@ -126,7 +126,7 @@ input[id="specify"]:checked ~ .active_glider {
   }
 
   .active_glider {
-    width: 113px;
+    max-width: 32%;
   }
 
   input[id="basic"]:checked~.active_glider {
@@ -134,11 +134,11 @@ input[id="specify"]:checked ~ .active_glider {
   }
 
   input[id="care"]:checked~.active_glider {
-    transform: translateX(106%);
+    transform: translateX(100%);
   }
 
   input[id="specify"]:checked~.active_glider {
-    transform: translateX(210%);
+    transform: translateX(200%);
   }
 
 }

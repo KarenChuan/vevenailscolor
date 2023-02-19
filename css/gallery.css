@@ -42,11 +42,6 @@
   border-radius: 5px;
 }
 
-.pics_area>li:hover img {
-  transition: transform linear .3s;
-  transform: scale(1.1, 1.1);
-  opacity: 1;
-}
 
 /***** 收藏最愛 *****/
 .collect {

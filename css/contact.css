@@ -112,12 +112,12 @@ button.btn {
 
   input[type="text"],
   textarea {
-    max-width: 100%;
+    max-width: 98%;
   }
 
   input[type="submit"].btn,
   button.btn {
-    padding: 10px 65px;
+    padding: 10px 50px;
   }
 
   .input_group label{

@@ -308,5 +308,11 @@ footer {
     line-height: 1.7rem;
   }
 
+  footer {
+    min-height: 242px;
+    padding: 40px 30px;
+    box-sizing: border-box;
+  }
+
 
 }

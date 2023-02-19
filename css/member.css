@@ -159,7 +159,7 @@ main>div {
     .form_block,
     input[type='text'],
     input[type='password'] {
-      width: 100%;
+      width: 98%;
     }
   
     input[type="submit"].btn,
