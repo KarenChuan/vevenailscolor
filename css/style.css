@@ -229,7 +229,7 @@ footer {
   nav {
     display: inherit;
     height: 60px;
-    position: relative;
+    position: fixed;
     background-color: #fffbe9;
   }
 
