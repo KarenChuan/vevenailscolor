@@ -216,8 +216,8 @@ footer {
 .pop_up_overlay {
   background-color: #e3caa54d;
   backdrop-filter: blur(10px);
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -283,6 +283,10 @@ footer {
     position: absolute;
     right: 5%;
     top: calc(50% - 22px);
+  }
+
+  .pop_up_overlay {
+    background-color: #3a3845ec;
   }
 
   main {

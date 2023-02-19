@@ -108,7 +108,7 @@ section.galleries{
   font-weight: 400;
 }
 
-button.svg_close {
+img.svg_close {
   position: absolute;
   right: 20px;
   padding: 5px;
@@ -399,7 +399,7 @@ button.svg_close {
 
   .pics {
     display: grid;
-    grid: auto / auto auto;
+    grid: auto auto auto auto / auto auto;
     grid-gap: 10px;
     padding: 0;
   }
@@ -425,14 +425,21 @@ button.svg_close {
     max-height: inherit;
     position: relative;
     left: calc(50% - 45%);
-    top: 20%;
+    top: 150px;
   }
 
   .pop_content {
     flex-direction: column-reverse;
     background-color: #fffbe9;
-    max-height: 50vh;
+    max-height: 1000px;
+  }
+
+  .pop_bg{
+    max-height: 500px;
     overflow: auto;
+  }
+  .pop_word{
+    margin: 40px 15px;
   }
 
   .pop_word+img{
