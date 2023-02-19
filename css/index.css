@@ -73,38 +73,6 @@ h1 {
   color: #fffbe9;
 }
 
-/* plugin Swiper */
-/* .swiper-slide img {
-  width: 100%;
-  height: auto;
-  transition: 1s linear 2s;
-  transform: scale(1.1, 1.1);
-}
-
-.swiper-slide-active img,
-.swiper-slide-duplicate-active img {
-  transition: 6s linear;
-  transform: scale(1, 1);
-}
-
-.swiper-pagination{
-  display: flex;
-  justify-content: right;
-}
-
-.banner-dot{
-  background-color: #FFFBE9;
-  opacity: 1;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-
-.dot-active{
-  background-color: #3a3845;
-} */
-
 /***** Section *****/
 section.news,
 section.concept,
@@ -434,6 +402,9 @@ button.svg_close {
     grid: auto / auto auto;
     grid-gap: 10px;
     padding: 0;
+  }
+  .pics a img{
+    width: 100%;
   }
 
   .item {
