@@ -6,7 +6,7 @@ main h3 {
 
 section.intro_block {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 120px;
 }
 
@@ -56,7 +56,7 @@ section.report_block h2 {
 }
 
 section.report_block img {
-  max-width: 974px;
+  width: 974px;
 }
 
 .brown_decroate {
@@ -118,7 +118,7 @@ section.report_block img {
   letter-spacing: 0.1rem;
 }
 
-.content img.icon_link {
+.content svg {
   position: absolute;
   right: 190px;
   bottom: 230px;
@@ -131,78 +131,4 @@ section.report_block img {
 
 .content:hover .depiction {
   opacity: 1;
-}
-
-/***** Media Query *****/
-
-@media (max-width :414px) {
-  main h3 {
-    margin-bottom: 20px;
-  }
-
-  section.intro_block {
-    flex-direction: column-reverse;
-    margin-bottom: 20px;
-  }
-
-  section .pic {
-    width: 100%;
-    min-height: 50vh;
-    background: url('./../img/about/about_concept_01.png');
-  }
-
-  section .pic img {
-    display: none;
-  }
-
-  .concept_introduce {
-    box-sizing: border-box;
-    width: 100%;
-    margin-top: 20px;
-  }
-
-  .concept_introduce p {
-    text-align: justify;
-  }
-
-  .brown_decroate {
-    display: none;
-  }
-
-  section.report_block{
-    min-height: 45vh;
-    margin-bottom: 20px;
-  }
-
-  section.report_block img {
-    max-width: 93vw;
-  }
-
-  .content img.icon_link{
-    position: inherit;
-    top:0;
-    bottom: 0;
-  }
-
-  .depiction span,
-  .depiction p{
-    font-size: 1.1rem;
-    padding: 0 10px;
-  }
-
-  .content:hover .content_overlay,
-  .content:hover .depiction {
-    opacity: 0;
-  }
-
-  .depiction,
-  .content_overlay {
-    padding: 0;
-    opacity: 1;
-  }
-
-  .content_overlay{
-    height: inherit;
-  }
-
 }

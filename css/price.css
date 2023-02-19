@@ -5,7 +5,7 @@
 
 .price_list {
   background-color: #fffbe9;
-  max-width: 700px;
+  width: 700px;
   padding: 30px 25px;
   border-radius: 10px;
   margin: 0 auto 100px auto;
@@ -38,20 +38,20 @@ input[type="radio"] {
   transition: color 0.15s ease-in;
 }
 
-input[type="radio"]:checked+label {
+input[type="radio"]:checked + label {
   color: #fffbe9;
   z-index: 2;
 }
 
-input[id="basic"]:checked~.active_glider {
+input[id="basic"]:checked ~ .active_glider {
   transform: translateX(0);
 }
 
-input[id="care"]:checked~.active_glider {
+input[id="care"]:checked ~ .active_glider {
   transform: translateX(105%);
 }
 
-input[id="specify"]:checked~.active_glider {
+input[id="specify"]:checked ~ .active_glider {
   transform: translateX(205%);
 }
 
@@ -87,58 +87,26 @@ input[id="specify"]:checked~.active_glider {
   margin-top: 20px;
 }
 
-.second_title~ul li {
+.second_title ~ ul li {
   display: flex;
   justify-content: space-between;
   padding: 10px 3px 0 3px;
 }
 
-.bottom_tips {
-  text-align: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 2px solid #826f66;
+.bottom_tips{
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #826f66;
+}
+.bottom_tips span{
+    margin: 10px;
 }
 
-.bottom_tips span {
-  margin: 10px;
-}
-
-#price_3 .bottom_tips {
+#price_3 .bottom_tips{
   text-align: left;
 }
 
-#price_3 .bottom_tips>p {
+#price_3 .bottom_tips>p{
   margin: 5px;
-}
-
-/***** MediaQuery *****/
-@media (max-width: 414px) {
-  .price_list {
-    max-width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0 auto 20px auto;
-  }
-
-  main>h3 {
-    margin-bottom: 20px;
-  }
-
-  .active_glider {
-    width: 113px;
-  }
-
-  input[id="basic"]:checked~.active_glider {
-    transform: translateX(0);
-  }
-
-  input[id="care"]:checked~.active_glider {
-    transform: translateX(106%);
-  }
-
-  input[id="specify"]:checked~.active_glider {
-    transform: translateX(210%);
-  }
-
 }
