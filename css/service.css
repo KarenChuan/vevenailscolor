@@ -62,3 +62,48 @@ main h4 {
 article {
   padding: 10px;
 }
+
+/***** Media Query *****/
+
+@media (max-width :414px) {
+  .service_info_block {
+    display: inline-grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "handImg"
+      "handCare"
+      "handPrint"
+      "footImg"
+      "footCare"
+      "footPrint";
+    column-gap: 0;
+    margin-bottom: 20px;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .box4,
+  .box5,
+  .box6 {
+    align-self: inherit;
+    justify-self: center;
+    margin-top: 40px;
+  }
+
+  .box3,
+  .box6 {
+    max-width: 100%;
+  }
+
+  .box3 img,
+  .box6 img {
+    width: 100%;
+  }
+
+  main>h3{
+    margin-bottom: 0;
+  }
+
+}

@@ -22,19 +22,66 @@
 
 .pics_area {
   margin: 50px auto;
-  column-count:3;
+  /* column-count:3;
   column-gap: 10px;
-  counter-reset: count;
+  counter-reset: count; */
+  display: block;
 }
 
 .pics_area > li {
-  width: 370px;
-  margin-bottom: 20px;
+  position: relative;
+  width: 355px;
 }
 
 .pics_area > li > img {
   width: 100%;
-  padding: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  opacity: .8;
+  border-radius: 5px;
+}
+
+.pics_area>li:hover img{
+  transition: transform linear .3s;
+  transform: scale(1.1, 1.1);
+  opacity: 1;
+}
+
+
+/***** 收藏最愛 *****/
+.collect{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  z-index: 5;
+  color: #fffbe9;
+}
+
+.collect span,
+.collect i{
+  text-shadow: 2px 2px 4px #ad8b73;
+  color: #fffbe9;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+i.active{
+  color: #d14b47;
+}
+.active{
+  animation: heart 0.5s linear;
+}
+@keyframes heart{
+  from{
+      font-size: 1.7rem;
+  }
+  50%{
+      font-size: 1.3rem;;
+  }
+  to{
+      font-size: 1.7rem;
+  }
 }
 
 /***** 滾動slide *****/
@@ -87,5 +134,24 @@
   }
   100% {
     top: 130%;
+  }
+}
+
+/***** MediaQuery *****/
+@media (max-width: 414px) {
+  .filter_area ul {
+    flex-wrap: wrap;
+  }
+
+  .filter_area ul>li {
+    border-radius: 30px;
+    padding: 10px 30px;
+    color: #ad8b73;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
+  .pics_area>li {
+    width: 100%;
   }
 }
