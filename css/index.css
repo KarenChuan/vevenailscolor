@@ -245,6 +245,13 @@ img.svg_close {
   padding: 20px;
 }
 
+.item{
+  width: 255px;
+  height: 255px;
+  overflow: hidden;
+  display: inline-block;
+}
+
 .item img{
   opacity: .7;
 }
@@ -399,6 +406,11 @@ img.svg_close {
   }
   .pics a img{
     min-width: 100%;
+  }
+
+  .item {
+    overflow: auto;
+    width: 100%;
   }
 
   .item img {
