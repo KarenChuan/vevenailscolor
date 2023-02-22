@@ -447,3 +447,35 @@ img.svg_close {
     width:90%;
   }
 }
+
+@media (max-width:1212px) {
+  nav ul{
+    min-width: 85%;
+    margin: 5px 10px;
+  }
+  nav .logo{
+    min-width: 15%;
+  }
+  nav .logo img{
+    margin: 20px auto;
+  }
+}
+
+@media (max-width:960px) {
+
+  
+}
+
+@media (max-width:769px) {
+  nav ul{
+    min-width: 85%;
+    margin: 5px 10px;
+  }
+  nav .logo{
+    min-width: 15%;
+  }
+  nav .logo img{
+    margin: 10px auto ;
+  }
+  
+}
